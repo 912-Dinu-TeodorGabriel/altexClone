@@ -1,0 +1,112 @@
+[
+    {
+        "id": "0",
+        "productName": "Samsung QN90A Neo QLED",
+        "image": "samsung-qn90a.jpg",
+        "screen": "65 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "Neo QLED",
+        "price": "2499",
+        "rating": "4.8",
+        "description": "The Samsung QN90A is a flagship Neo QLED TV with stunning picture quality and vibrant colors. With its sleek design and advanced features like Object Tracking Sound and Quantum HDR 32x, it's perfect for users who demand the best from their TV."
+    },
+    {
+        "id": "1",
+        "productName": "LG C1 OLED",
+        "image": "lg-c1-oled.jpg",
+        "screen": "55 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "OLED",
+        "price": "1799",
+        "rating": "4.9",
+        "description": "The LG C1 OLED is a premium TV with stunning picture quality and infinite contrast ratio. With its sleek design and advanced features like Dolby Vision IQ and AI ThinQ, it's perfect for users who demand the best cinematic experience at home."
+    },
+    {
+        "id": "2",
+        "productName": "Sony A90J OLED",
+        "image": "sony-a90j-oled.jpg",
+        "screen": "65 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "OLED",
+        "price": "2999",
+        "rating": "4.7",
+        "description": "The Sony A90J OLED is a flagship TV with stunning picture quality and immersive sound. With its sleek design and advanced features like Acoustic Surface Audio+ and XR OLED Contrast Pro, it's perfect for users who demand the ultimate home entertainment experience."
+    },
+    {
+        "id": "3",
+        "productName": "TCL 6-Series QLED",
+        "image": "tcl-6-series.jpg",
+        "screen": "55 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "QLED",
+        "price": "699",
+        "rating": "4.5",
+        "description": "The TCL 6-Series is a budget-friendly QLED TV with impressive picture quality and Dolby Vision support. With its sleek design and Roku TV platform, it's perfect for users who want high-quality performance without breaking the bank."
+    },
+    {
+        "id": "4",
+        "productName": "Hisense U8G Quantum Series",
+        "image": "hisense-u8g.jpg",
+        "screen": "65 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "Quantum Dot",
+        "price": "1499",
+        "rating": "4.6",
+        "description": "The Hisense U8G Quantum Series is a mid-range TV with impressive picture quality and vibrant colors. With its sleek design and Android TV platform, it's perfect for users who want a premium viewing experience at an affordable price."
+    },
+    {
+        "id": "5",
+        "productName": "Vizio OLED55-H1",
+        "image": "vizio-oled55-h1.jpg",
+        "screen": "55 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "OLED",
+        "price": "1299",
+        "rating": "4.3",
+        "description": "The Vizio OLED55-H1 is an affordable OLED TV with stunning picture quality and Dolby Vision support. With its sleek design and Vizio SmartCast platform, it's perfect for users who want high-end features at a reasonable price."
+    },
+    {
+        "id": "6",
+        "productName": "Panasonic TX-65HZ1500B",
+        "image": "panasonic-tx-65hz1500b.jpg",
+        "screen": "65 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "OLED",
+        "price": "2799",
+        "rating": "4.7",
+        "description": "The Panasonic TX-65HZ1500B is a premium OLED TV with stunning picture quality and Dolby Atmos support. With its sleek design and HCX Pro Intelligent Processor, it's perfect for users who demand the best in home entertainment."
+    },
+    {
+        "id": "7",
+        "productName": "Samsung AU8000 Crystal UHD",
+        "image": "samsung-au8000.jpg",
+        "screen": "55 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "Crystal UHD",
+        "price": "999",
+        "rating": "4.4",
+        "description": "The Samsung AU8000 Crystal UHD is a budget-friendly TV with vibrant colors and impressive upscaling. With its sleek design and Tizen smart platform, it's perfect for users who want a reliable and affordable TV."
+    },
+    {
+        "id": "8",
+        "productName": "LG NanoCell 85 Series",
+        "image": "lg-nanocell-85-series.jpg",
+        "screen": "65 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "NanoCell",
+        "price": "1399",
+        "rating": "4.6",
+        "description": "The LG NanoCell 85 Series is a mid-range TV with vibrant colors and wide viewing angles. With its sleek design and webOS smart platform, it's perfect for users who want a balance between performance and affordability."
+    },
+    {
+        "id": "9",
+        "productName": "Sony X80J 4K HDR TV",
+        "image": "sony-x80j.jpg",
+        "screen": "55 inches",
+        "resolution": "4K UHD",
+        "displayTechnology": "LED",
+        "price": "799",
+        "rating": "4.2",
+        "description": "The Sony X80J 4K HDR TV is a budget-friendly LED TV with vibrant colors and HDR support. With its sleek design and Google TV platform, it's perfect for users who want a reliable and affordable TV with smart features."
+    }
+]

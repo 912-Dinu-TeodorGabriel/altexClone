@@ -1,0 +1,12 @@
+.filters{
+    display: flex;
+    min-width: 18%;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-right: 5em;
+    margin-left:5px;
+}
+.filter{
+    display: inline-flex;
+    width:100%;
+}

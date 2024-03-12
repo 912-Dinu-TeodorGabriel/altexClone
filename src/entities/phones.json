@@ -1,0 +1,110 @@
+[
+    {
+        "id": "0",
+        "productName": "iPhone 13 Pro",
+        "image": "iphone-13-pro.jpg",
+        "cpu": "Apple A15 Bionic",
+        "ram": "6GB",
+        "storage": "128GB",
+        "screen": "6.1-inch Super Retina XDR",
+        "price": "999",
+        "description": "The iPhone 13 Pro features the powerful A15 Bionic chip, a stunning Super Retina XDR display, and an advanced camera system. With 5G connectivity and all-day battery life, it's the perfect choice for users who demand the best from their smartphone.",
+        "rating": 4.8
+    },
+    {
+        "id": "1",
+        "productName": "Samsung Galaxy S21 Ultra",
+        "image": "samsung-galaxy-s21-ultra.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen": "6.8-inch Dynamic AMOLED 2X",
+        "price": "1199",
+        "description": "The Samsung Galaxy S21 Ultra is a flagship smartphone with a powerful Snapdragon 888 processor and an impressive camera setup. With its stunning display and 5G capabilities, it's perfect for users who demand top-of-the-line performance.",
+        "rating": 4.7
+    },
+    {
+        "id": "2",
+        "productName": "Google Pixel 6 Pro",
+        "image": "google-pixel-6-pro.jpg",
+        "cpu": "Google Tensor",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen": "6.7-inch LTPO OLED",
+        "price": "899",
+        "description": "The Google Pixel 6 Pro features the new Google Tensor chip, a vibrant LTPO OLED display, and an advanced camera system. With its sleek design and stock Android experience, it's the perfect choice for users who prefer Google's ecosystem.",
+        "rating": 4.5
+    },
+    {
+        "id": "3",
+        "productName": "OnePlus 9 Pro",
+        "image": "oneplus-9-pro.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen": "6.7-inch Fluid AMOLED",
+        "price": "1069",
+        "description": "The OnePlus 9 Pro is a premium smartphone with a Snapdragon 888 processor and a stunning Fluid AMOLED display. With its Hasselblad camera system and fast charging capabilities, it's perfect for users who demand high performance and photography.",
+        "rating": 4.6
+    },
+    {
+        "id": "4",
+        "productName": "Xiaomi Mi 11 Ultra",
+        "image": "xiaomi-mi-11-ultra.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen": "6.81-inch AMOLED",
+        "price": "1199",
+        "description": "The Xiaomi Mi 11 Ultra is a flagship smartphone with a Snapdragon 888 processor and a stunning AMOLED display. With its powerful camera system and long-lasting battery, it's perfect for users who demand top-notch performance and photography.",
+        "rating": 4.8
+    },
+    {
+        "id": "5",
+        "productName": "Sony Xperia 1 III",
+        "image": "sony-xperia-1-iii.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen": "6.5-inch 4K HDR OLED",
+        "price": "1299",
+        "description": "The Sony Xperia 1 III is a flagship smartphone with a Snapdragon 888 processor and a stunning 4K HDR OLED display. With its advanced camera features and long battery life, it's perfect for users who demand high-quality multimedia experiences.",
+        "rating": 4.7
+    },
+    {
+        "id": "6",
+        "productName": "Huawei P50 Pro",
+        "image": "huawei-p50-pro.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "8GB",
+        "storage": "256GB",
+        "screen": "6.6-inch OLED",
+        "price": "1099",
+        "description": "The Huawei P50 Pro is a flagship smartphone with a Snapdragon 888 processor and a stunning OLED display. With its advanced camera system and sleek design, it's perfect for users who demand top-notch photography and performance.",
+        "rating": 4.5
+    },
+    {
+        "id": "7",
+        "productName": "Xiaomi Mi 11i",
+        "image": "xiaomi-mi-11i.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "8GB",
+        "storage": "256GB",
+        "screen": "6.67-inch AMOLED",
+        "price": "799",
+        "description": "The Xiaomi Mi 11i is a flagship smartphone with a Snapdragon 888 processor and a vibrant AMOLED display. With its powerful camera system and fast charging capabilities, it's perfect for users who demand high performance and affordability.",
+        "rating": 4.3
+    },
+    {
+        "id": "8",
+        "productName": "Oppo Find X3 Pro",
+        "image": "oppo-find-x3-pro.jpg",
+        "cpu": "Qualcomm Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen": "6.7-inch AMOLED",
+        "price": "1099",
+        "description": "The Oppo Find X3 Pro is a flagship smartphone with a Snapdragon 888 processor and a stunning AMOLED display. With its advanced camera system and sleek design, it's perfect for users who demand top-notch performance and photography.",
+        "rating": 4.6
+    }
+]

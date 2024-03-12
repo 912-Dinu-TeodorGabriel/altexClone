@@ -1,0 +1,29 @@
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+}
+.titleDetails{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.imagePriceContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 100%;
+}
+.imageContainer{
+    max-width: 50%;
+    margin-left: 20em;
+}
+.priceContainer{
+    max-width: 50%;
+}
