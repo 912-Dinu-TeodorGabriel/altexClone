@@ -1,6 +1,7 @@
 # altex.ro Clone - React & Material-UI Project
 
 Welcome to the altex.ro Clone project!
+Still working on this project!
 
 ## Overview
 
