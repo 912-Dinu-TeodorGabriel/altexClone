@@ -4,23 +4,21 @@ import styles from '../styling/Details.module.css';
 import imageDetails from './assets/unknown.jpeg';
 import Button  from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
-import { List, ListItem, ListItemText, Popover } from '@mui/material';
-function Details({ foundItem }) {
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
+const Details = ({ foundItem }) => {
     const { opacity } = useOpacity();
     const [showLetters, setShowLetters] = useState(true);
-    const [anchorEl, setAnchorEl] = useState(null);
 
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
+    const [checkedSpec, setCheckedSpec] = React.useState(false);
+    const handleChangeSpec = () => {
+      setCheckedSpec((prev) => !prev);
     };
-  
-    const handleClose = () => {
-      setAnchorEl(null);
+    const [checkedDesc, setCheckedDesc] = React.useState(false);
+    const handleChangeDesc = () => {
+      setCheckedDesc((prev) => !prev);
     };
-  
-    const open = Boolean(anchorEl);
-    const id = open ? 'specifications-list' : undefined;
+
   
     useEffect(() => {
       const handleResize = () => {
@@ -40,34 +38,58 @@ function Details({ foundItem }) {
             <div className={styles.details}>
                 {foundItem ? (
                     <>  
-                        <h2 className={styles.titleDetails}>{foundItem.productName && foundItem.productName}</h2>
+                        <h2>{foundItem.productName && foundItem.productName}</h2>
                         <Rating name="read-only" precision={0.1} value={foundItem.rating} readOnly/>
                         <p>Rating: {foundItem.rating && foundItem.rating}</p>
                         {showLetters ? (
                         <div className={styles.imagePriceContainer}>
-                            <img className={styles.imageDetails} src={imageDetails} alt="Product" />
-                            <p className={styles.priceContainer}> Price: {foundItem.price && foundItem.price}</p>
+                            <img src={imageDetails} alt="Product" />
+                            <div style={{display: 'flex', flexDirection:'column'}}>
+                              <p className={styles.priceContainer}> Price: {foundItem.price && foundItem.price} lei</p>
+                              <Button className='custom-button'>
+                                Adauga in cos
+                              </Button>
+                            </div>
                         </div>
                         ):(
-                            <div style={{display: 'flex', flexDirection:'column'}}>
-                                <div style={{display: 'flex', width:'10vh'}}>
-                                    <img className={styles.imageDetails} src={imageDetails} alt="Product" />
-                                </div>
+                            <div style={{display: 'flex', flexDirection:'column', width:'30vh'}}>
+                                <img className={styles.imageDetails} src={imageDetails} alt="Product" />
                                 <p> Price: {foundItem.price && foundItem.price}</p>
+                                <Button className='custom-button'>
+                                    Adauga in cos
+                                </Button>
                             </div>
                         )}
-                        <div className={styles.descriptionContainer}>
-                            <h2>Description</h2>
-                            <p>{foundItem.description && foundItem.description}</p>
-                        </div>
-                        <div className={styles.specificationsContainer}>
-                            <h2>Specifications</h2>
-                                {foundItem.cpu && <p>CPU: {foundItem.cpu}</p>}
-                                {foundItem.ram && <p>RAM: {foundItem.ram}</p>}
-                                {foundItem.storage && <p>Storage: {foundItem.storage}</p>}
-                                {foundItem.screen && <p>Screen: {foundItem.screen}</p>}
-                                {foundItem.resolution && <p>Resolution: {foundItem.resolution}</p>}
-                                {foundItem.displayTechnology && <p>Display Technology: {foundItem.displayTechnology}</p>}
+                        <div className={styles.underContainer}>
+                          <div className={styles.descriptionContainer}>
+                            <Button
+                              className={styles.democustomizedbutton}
+                              variant="contained"
+                                disableElevation
+                              onClick={handleChangeDesc}
+                              endIcon={<KeyboardArrowDownIcon />}
+                            >
+                              <h3>Description</h3>  </Button>
+                              <h5 style={{display: checkedDesc ? 'flex' : 'none', width: showLetters ? '120ch' : '35ch', textAlign: 'left'}}>{foundItem.description && foundItem.description}</h5>
+                          </div>
+                          <div className={styles.specificationsContainer}>
+                            <Button
+                                className={styles.democustomizedbutton}
+                                variant="contained"
+                                disableElevation
+                                onClick={handleChangeSpec}
+                                endIcon={<KeyboardArrowDownIcon />}
+                              >
+                            <h3>Specifications</h3>  </Button>
+                            <div style={{display: checkedSpec ? 'flex' : 'none', flexDirection:'column', width: '100%', marginLeft:'2em', boxSizing:'border-box'}}>
+                                {foundItem.cpu && (<><h3>CPU:</h3> <h5> {foundItem.cpu}</h5></>)}
+                                {foundItem.ram && (<><h3>RAM:</h3> <h5> {foundItem.ram}</h5></>)}
+                                {foundItem.storage && (<><h3>Storage:</h3> <h5> {foundItem.storage}</h5></>)}
+                                {foundItem.screen && (<><h3>Screen:</h3> <h5> {foundItem.screen}</h5></>)}
+                                {foundItem.resolution && (<><h3>Resolution:</h3> <h5> {foundItem.resolution}</h5></>)}
+                                {foundItem.displayTechnology && (<><h3>Display Technology:</h3> <h5> {foundItem.displayTechnology}</h5></>)}  
+                            </div>
+                          </div>
                         </div>
                     </>
                 ) : (

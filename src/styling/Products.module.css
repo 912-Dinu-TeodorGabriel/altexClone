@@ -1,11 +1,12 @@
 .products{
     display: flex;
-    width: 100%;
+    position: relative;
+    flex: 1;
     flex-wrap:wrap;
 }
 .product{
     display: flex;
-    margin: 10em;
+    margin: 15em;
     cursor: pointer;
 
 }
@@ -22,7 +23,7 @@ input{
 p{
     max-width: 20ch;/* 30 characters */
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
     cursor: pointer;

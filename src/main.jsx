@@ -1,13 +1,13 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './styling/index.css'
+import './styling/main.css'
 import Search from "./pages/Search";
 import Specs from "./pages/Specs";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme();
 
-export default function App() {
+const App = () => {
   
   return (
     <>
@@ -25,7 +25,7 @@ export default function App() {
     </>
   );
 }
-
+export default App;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 

@@ -12,10 +12,11 @@ import Button  from '@mui/material/Button';
 import { useOpacity } from '../hooks/OpacityContext';
 import Rating from '@mui/material/Rating';
 
-function Products({e}) {
+const Products = ({e}) => {
     const [newEntityName, setNewEntityName] = useState('');
     const { opacity } = useOpacity();
     let entities = [];
+
     if(e === 'phones'){
         entities = phonesEntities;
     }
@@ -29,7 +30,7 @@ function Products({e}) {
         entities = Array.from(new Set([...laptopsEntities, ...phonesEntities, ...tvEntities]));
     }
     const [entitiesState, setEntitiesState] = useState(entities); // Initialize with your initial entities array
-
+    const [isOpen, setIsOpen] = useState(Array.from({ length: entities.length }, () => false));
     const [hiddenItems, setHiddenItems] = useState(Array.from({ length: entities.length }, () => false));
     const [isEditable, setIsEditable] = useState(false);
 
@@ -43,27 +44,33 @@ function Products({e}) {
     const handleEditToggle = () => {
         setIsEditable(!isEditable);
     };
-
+    
     const handleClick = (index) => {
         const newHiddenItems = [...hiddenItems];
         newHiddenItems[index] = !hiddenItems[index];
         setHiddenItems(newHiddenItems);
     };
+    const handleClickOpen = (index) => {
+        const newIsOpen = [...isOpen];
+        newIsOpen[index] = !isOpen[index];
+        setIsOpen(newIsOpen);
+    };
 
     const handleAdd = () => {
         const newEntity = { 
             productName: newEntityName,
-            image: `${newEntityName}.jpg` // Concatenate the productName with '.jpg' using template literals
+            image: `${newEntityName}.jpg`
         };
         setEntitiesState([...entitiesState, newEntity]);
         setHiddenItems([...hiddenItems, false]);
-        setNewEntityName(''); // Clear the input
+        setNewEntityName('');
+        setIsOpen(false);
     };
     
 
     return (
         <div style={{ opacity }}>
-        <EditIcon onClick={handleEditToggle} style={{
+        <EditIcon className='editButton' onClick={handleEditToggle} style={{
                         marginTop: '15px'}}/>
         <div className={styles.products}>
             {entitiesState.map((entity, index) => (
@@ -71,10 +78,14 @@ function Products({e}) {
                 {hiddenItems[index] == false && (
                 <div className="product" key={index} style = {{marginRight: '10px'}}>
                     <div style = {{display: 'flex', flexDirection: 'column'}}> 
+                        <div style = {{display: 'flex', flexDirection: 'row', width:'100%', alignItems:'center', height:'1.5em'}}> 
                         <DeleteForeverIcon
                             className= "deleteButton"
-                            onClick={() => handleClick(index)}
+                            onClick={() => handleClickOpen(index)}
                         />
+                        <p style ={{display: isOpen[index] ? 'flex' : 'none'}}> Are you sure ?</p>
+                        <Button className= "custom-button" onClick={() => handleClick(index)} style ={{display: isOpen[index] ? 'flex' : 'none', height:'0.9em', width:'0.9em'}}>Yes</Button>
+                        </div>
                         <img src={imageLaptop} className= "imageProduct" />
                     </div>
                     {isEditable ? (
@@ -87,14 +98,14 @@ function Products({e}) {
                     ) : (
                         <p style = {{margin: '0', fontSize: '17px'}}
                             className= "detailsProduct" >  
-                            <Link to={`/product/${entity.image.slice(0,-4)}`} style={{ color: 'white', textDecoration: 'none' }}>
+                            <Link reloadDocument to={`/product/${entity.image.slice(0,-4)}`} style={{ color: 'white', textDecoration: 'none' }}>
                                 {entity.productName}
                             </Link>
                         </p>
                     )}
                     <div style = {{display: 'flex', flexDirection: 'column'}}>
-                        <Rating name="read-only" precision={0.1} value={entity.rating} readOnly/>
-                        <p style={{margin: '0', fontSize:'14px'}}>Price: {entity.price}</p>
+                        <Rating name="read-only" precision={0.1} value={parseFloat(entity.rating)} readOnly/>
+                        <p style={{margin: '0', fontSize:'14px'}}>Price: {entity.price} lei</p>
                     </div>
                     <Button className= "custom-button">Adauga in cos</Button>
                 </div>)}</>

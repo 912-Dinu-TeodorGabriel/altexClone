@@ -52,7 +52,7 @@ const Search = styled('div')(({ theme }) => ({
     },
   }));
 
-function Header() {
+const Header = () => {
     const [showLetters, setShowLetters] = useState(true);
 
     useEffect(() => {

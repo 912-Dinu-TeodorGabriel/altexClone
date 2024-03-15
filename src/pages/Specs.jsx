@@ -6,7 +6,7 @@ import laptopData from '../entities/laptop.json';
 import tvData from '../entities/tv.json';
 import React, { useState, useEffect } from 'react';
 import Details from '../components/Details';
-import { OpacityProvider } from '../hooks/OpacityContext'
+import { OpacityProvider } from '../hooks/OpacityContext';
 
 function Specs() {
   let { productId } = useParams();

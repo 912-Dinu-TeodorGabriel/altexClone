@@ -3,15 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-left: 40px;
-}
-.titleDetails{
-    display: flex;
-    flex-grow: 1;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+    margin-left: 30px;
 }
 .imagePriceContainer{
     display: flex;
@@ -20,10 +12,30 @@
     box-sizing: border-box;
     width: 100%;
 }
-.imageContainer{
-    max-width: 50%;
-    margin-left: 20em;
+.underContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px !important;
+
 }
-.priceContainer{
-    max-width: 50%;
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.specificationsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+.democustomizedbutton{
+    display: flex;
+    width: 86%;
+    background-color: transparent !important;
+    justify-content: flex-start !important;
+    border: 0.8px solid rgba(0, 0, 0, 0.3)!important;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3) !important;
+    box-sizing: border-box !important;
 }

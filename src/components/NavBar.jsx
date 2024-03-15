@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import styles from'../styling/Navbar.module.css';
-import { Outlet,Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import Button  from '@mui/material/Button';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useOpacity } from '../hooks/OpacityContext';
-function NavBar(){
+
+const NavBar = () =>{
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const { setOpacity } = useOpacity(); // Destructure setOpacity here
+    const { setOpacity } = useOpacity();
   
     const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
